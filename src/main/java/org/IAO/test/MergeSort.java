@@ -12,7 +12,7 @@ public class MergeSort {
         for (int k=lo;k<=hi;k++){
             if(i>mid) a[k] = aux[j++];
             else if(j>hi) a[k] = aux[i++];
-            else if(less(a[i],a[j])) a[k] = aux[i++];
+            else if(less(aux[i],aux[j])) a[k] = aux[i++];
             else a[k] = aux[j++];
         }
     }

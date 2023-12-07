@@ -326,6 +326,7 @@ public final class StdIn {
      * @return all remaining tokens on standard input, as an array of strings
      */
     public static String[] readAllStrings() {
+
         // we could use readAll.trim().split(), but that's not consistent
         // because trim() uses characters 0x00..0x20 as whitespace
         String[] tokens = WHITESPACE_PATTERN.split(readAll());
